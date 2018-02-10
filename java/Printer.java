@@ -1,6 +1,13 @@
 import java.util.List;
+import java.util.Set;
 
 public class Printer {
+	
+	public static void printStringSet(Set<String> strSet) {
+		for(String str : strSet) {
+			System.out.println(str);
+		}
+	}
 	
 	public static void printStringArray(String[] strArray) {
 		for(int i = 0; i < strArray.length; i ++) {
