@@ -49,5 +49,13 @@ class PrinterTest {
 		String expected = "first word\nsecond word\n".replaceAll("\\n|\\r\\n", System.getProperty("line.separator"));
 		assertEquals(expected, outContent.toString());
 	}
+	
+	@Test
+	void testPrintStringArray() {
+		String[] strArray = new String[] {"first word", "second word"};
+		Printer.printStringArray(strArray);
+		String expected = "first word\nsecond word\n".replaceAll("\\n|\\r\\n", System.getProperty("line.separator"));
+		assertEquals(expected, outContent.toString());
+	}
 
 }
