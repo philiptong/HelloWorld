@@ -13,10 +13,4 @@ public class Printer {
 		System.out.println(str);
 	}
 
-	
-	public static void main(String[] arg0) {
-		String str = "Hello World!!!";
-		Printer.printString(str);
-	}
-
 }
